@@ -31,7 +31,7 @@ All services are **100% free for `.i` domain holders**—users only need their o
 - The AI Copilot uses **19 official Doti Protocol MCP tools** to query live state, check availability, verify on-chain guards, and prepare safe, human-readable **Action Cards**.
 - **User-Guarded Execution:** The agent *never* executes transactions without explicit user wallet confirmation. You review the exact contract address, method, value, and EIP-712 typed data before signing with 1 click.
 
-### ⚡ 3. Complete Suite of 10 On-Chain Actions
+### ⚡ 3. Complete Suite of 13 On-Chain Actions
 1. **Domain Registration**: Register new `.i` domains directly on Arbitrum One (0.001 ETH fixed price).
 2. **Cross-Chain Bridge**: Move domains across Arbitrum One (`42161`), OP Mainnet (`10`), Ethereum (`1`), and Robinhood (`4663`) via Chainlink CCIP v1.5.
 3. **Primary Identity (Reverse Record)**: Configure default on-chain reverse resolution identity for your EVM wallet.
@@ -42,13 +42,31 @@ All services are **100% free for `.i` domain holders**—users only need their o
 8. **Instant Marketplace Purchase**: Buy listed domains atomically via smart contract escrow.
 9. **Escrow Offers & Bids**: Make custom ETH purchase offers on listed or unlisted `.i` domains with duration controls.
 10. **Claim Escrow Refund**: Withdraw unspent escrow balance or cancelled deposit funds with zero lockups.
+11. **Token Deployment (Clanker)**: Deploy custom ERC-20 tokens with automated Uniswap V4 liquidity pools on Arbitrum One.
+12. **Token Purchase & Swapping**: Calculate optimal swap routes and buy ERC-20 tokens / WETH with ETH on Arbitrum One.
+13. **Claim LP Fee Rewards**: Harvest 100% of accumulated LP creator fees directly into your sovereign wallet.
 
 ### 🛠️ 4. Real-time MCP Tooling (19 Endpoints)
 - Live cross-chain verification, domain lookup, availability checker, transaction status watcher, IPFS avatar updater, and marketplace floor tracking.
 
----
+### 🚀 5. Clanker Protocol & Uniswap Trading (Arbitrum One)
+- **Instant Token Launching**: Sovereign `.i` domain holders can deploy custom ERC-20 tokens via **Clanker Protocol** (`@clanker_world`) with automated **Uniswap V4** (`@Uniswap`) liquidity pools on **Arbitrum One** (`@arbitrum`).
+- **100% Free for Domain Owners**: Zero platform fees, zero protocol taxes, and no hidden cuts. Creators pay only standard Arbitrum L2 network gas.
+- **Two Flexible Launch Methods**:
+  1. **Visual Sidebar**: Open the `Clanker & Uniswap` accordion tab and click **Launch Token (Clanker)**.
+  2. **Conversational AI Copilot**: Ask in plain English (e.g. *"Deploy a new token called Sovereign with ticker SOV and 1B supply"*).
+- **Direct In-App Trading & Uniswap Swap View**:
+  - Swap freshly deployed tokens, Arbitrum tokens, and Wrapped Ether (WETH) directly inside the dedicated Uniswap view.
+  - Real-time rate routing via KyberSwap / Uniswap aggregators with live spot price calculations.
+  - Smart decimal formatting preserving precision down to `0.000001` with zero truncation.
+  - Dynamic gas-safe percentage selectors (`25%`, `50%`, `75%`, `MAX`) that prevent overspending wallet gas.
+  - Strict balance guards ensuring approval and swap buttons activate only when balances are strictly verified.
+- **AI-Powered "Buy Token" Action**:
+  - Purchase any Arbitrum ERC-20 token conversationally (e.g. *"Buy 0.05 ETH of token contract 0x..."*).
+  - Built-in on-chain bytecode & ERC-20 interface verification rejecting invalid contracts or non-token addresses with zero fake quotes.
+- **Creator LP Fee Claiming**: Built-in fee harvesting in the `My Tokens & Rewards` dashboard, allowing token creators to claim 100% of accumulated LP trading fees directly into their sovereign wallet.
 
-## 🏗️ Architecture & Technology Stack
+---
 
 | Layer | Technology | Description |
 | :--- | :--- | :--- |
@@ -121,6 +139,9 @@ npm start
    - *"Update the price of web3.i to 0.09 ETH for 14 days"*
    - *"Bridge my domain identity to Optimism"*
    - *"Cancel my active listing for test.i"*
+   - *"Deploy a new token called Sovereign with ticker SOV and 1B supply"*
+   - *"Buy 0.02 ETH of token contract 0x..."*
+   - *"Claim my accumulated Clanker LP fee rewards"*
 5. **Review & Confirm**: Click **Execute Action** on the generated Action Card to sign the transaction via your wallet.
 
 ---
@@ -140,7 +161,8 @@ npm start
 - [x] 10 core on-chain transaction actions
 - [x] Gasless EIP-712 marketplace listings & cancellations
 - [x] Customizable listing durations (7, 14, 30, 90, 180 days)
-- [x] Decentralized IPFS website hosting deployment assistant
+- [ ] Automated domain expiry renewal alerts & one-click batch renewals
+- [ ] Decentralized IPFS website hosting deployment assistant
 - [ ] Multi-sig (Safe) integration for DAO domain management
 - [ ] Agent-to-Agent autonomous domain negotiations
 
@@ -154,10 +176,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 🤝 Community & Support
 
-- 🌐 **Live App**: [https://doti.fun](https://doti.fun)
-- 🤖 **AI Agent Hub**: [https://doti.my/docs](https://doti.my/docs)
-- ✨ **Doti Protocol**: [https://doti.my](https://doti.my)
-- 🤖 **AI Agent Hub**: [https://doti.my/docs](https://doti.my/docs)
-- 🛠️ **Tester**: [https://mcp.doti.my](https://mcp.doti.my)
-
+- **Doti Protocol**: [https://doti.my](https://doti.my)
+- **AI Agent SDK**: [https://doti.my/docs](https://doti.my/?view=ai-hub)
 - **Issues & Pull Requests**: Contributions are welcome via GitHub Pull Requests!
